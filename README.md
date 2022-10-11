@@ -21,7 +21,7 @@ Colors Random, es una app en donde por medio de un clic en el botón principal, 
 
 ## Overview
 
-![screenshot](https://github.com/Frankodev/devchallenges---404-Not-Found/blob/master/img/demo.png)
+![screenshot](https://github.com/Frankodev/colors-random/blob/master/Captura.png)
 
 - Aquí puedes ver mi proyecto:
   <!-- <a href="https://aquamarine-melomakarona-366361.netlify.app/">Demo · 404 NOT FOUND</a> -->
