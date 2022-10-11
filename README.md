@@ -24,7 +24,7 @@ Colors Random, es una app en donde por medio de un clic en el botón principal, 
 ![screenshot](https://github.com/Frankodev/colors-random/blob/master/Captura.png)
 
 - Aquí puedes ver mi proyecto:
-  <!-- <a href="https://aquamarine-melomakarona-366361.netlify.app/">Demo · 404 NOT FOUND</a> -->
+  [Colors Random](https://frankodev.github.io/colors-random/)
 
 - ¿Qué experiencia necesitas?
   Realmente solo necesitas conocer un poco de HTML, CSS y conceptos básicos de JavaScript, como variables, bucles y funciones.

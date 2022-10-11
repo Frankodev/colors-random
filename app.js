@@ -1,4 +1,5 @@
 /** @format */
+console.log("Hello devs!");
 
 // 1.- declarar las variables que vamos a utilizar en el programa
 const btn = document.getElementById("btn");
