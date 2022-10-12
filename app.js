@@ -1,64 +1,17 @@
 /** @format */
 console.log("Hello devs!");
 
+//importando el modulo de código que almacena el listado de colores desde el archivo 'colorsList.js'
+import { colorsList } from "./colorsList.js";
+
 // 1.- declarar las variables que vamos a utilizar en el programa
 const btn = document.getElementById("btn");
 const colorRandom = document.getElementById("colorRandom");
 const colorHexa = document.getElementById("colorhexa");
+const copy = document.getElementById("copy");
 
 // 2.- tener una colección (Array) de colores
-let colectionColors = [
-  "#FF6633",
-  "#FFB399",
-  "#FF33FF",
-  "#FFFF99",
-  "#00B3E6",
-  "#E6B333",
-  "#3366E6",
-  "#999966",
-  "#99FF99",
-  "#B34D4D",
-  "#80B300",
-  "#809900",
-  "#E6B3B3",
-  "#6680B3",
-  "#66991A",
-  "#FF99E6",
-  "#CCFF1A",
-  "#FF1A66",
-  "#E6331A",
-  "#33FFCC",
-  "#66994D",
-  "#B366CC",
-  "#4D8000",
-  "#B33300",
-  "#CC80CC",
-  "#66664D",
-  "#991AFF",
-  "#E666FF",
-  "#4DB3FF",
-  "#1AB399",
-  "#E666B3",
-  "#33991A",
-  "#CC9999",
-  "#B3B31A",
-  "#00E680",
-  "#4D8066",
-  "#809980",
-  "#E6FF80",
-  "#1AFF33",
-  "#999933",
-  "#FF3380",
-  "#CCCC00",
-  "#66E64D",
-  "#4D80CC",
-  "#9900B3",
-  "#E64D66",
-  "#4DB380",
-  "#FF4D4D",
-  "#99E6E6",
-  "#6666FF",
-];
+let colectionColors = colorsList;
 
 // 3.- crear una función que tome un color al azar de la colección de colores y aplicar ese color al div contenedor del color "colorRandom"
 const changeColor = () => {
@@ -86,6 +39,26 @@ const changeColor = () => {
 // 4.1.- escuchar el evento del click del btn
 // 4.2.- llamar a la función que hace el cambio del color
 btn.addEventListener("click", changeColor);
+
+// 5.- copiar código hexadecimalal hacer click sobre el
+colorHexa.addEventListener("click", copyPapper);
+// 5.1.- función que copia el código hexadecimal del color al portapapeles
+function copyPapper(elementCopy) {
+  let input = document.createElement("input");
+  input.setAttribute("value", elementCopy.target.innerText);
+  document.body.appendChild(input);
+  input.select();
+  document.execCommand("copy");
+  document.body.removeChild(input);
+
+  // aparece mensaje copy
+  copy.classList.add("active");
+
+  // remove mensaje copy
+  setTimeout(() => {
+    copy.classList.remove("active");
+  }, 990);
+}
 
 //NOTAS - LECTURAS
 
