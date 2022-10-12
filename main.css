@@ -45,7 +45,6 @@ body {
   position: absolute;
   right: -2.9rem;
   font-size: 1.4rem;
-  background-color: transparent;
 }
 
 .copy.active {
@@ -56,31 +55,31 @@ body {
 @keyframes copycolor {
   0% {
     bottom: 10px;
-    color: rgb(179, 102, 204);
+    color: rgb(51, 255, 204);
   }
   15% {
     bottom: 15px;
-    color: rgb(179, 102, 204, 0.9);
+    color: rgb(51, 255, 204, 0.9);
   }
   25% {
     bottom: 20px;
-    color: rgb(179, 102, 204, 0.75);
+    color: rgb(51, 255, 204, 0.75);
   }
   50% {
     bottom: 25px;
-    color: rgb(179, 102, 204, 0.5);
+    color: rgb(51, 255, 204, 0.5);
   }
   75% {
     bottom: 30px;
-    color: rgb(179, 102, 204, 0.35);
+    color: rgb(51, 255, 204, 0.35);
   }
   100% {
     bottom: 35px;
-    color: rgb(179, 102, 204, 0.15);
+    color: rgb(51, 255, 204, 0.15);
   }
   125% {
     bottom: 40px;
-    color: rgb(179, 102, 204, 0.05);
+    color: rgb(51, 255, 204, 0.05);
   }
 }
 
